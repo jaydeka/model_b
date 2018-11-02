@@ -13,7 +13,7 @@ import sys
 
 
 def input_data():
-    file_name = "E:\model_b/Train_model_b.xlsx"
+    file_name = "model_b/Train_model_b.xlsx "
     list_of_patient = []
     df = pd.read_excel(io=file_name)
     patient_id = df['patient_id'].tolist()
@@ -28,13 +28,13 @@ def input_data():
     array_images =[]
     array_target = []
     for i in range(len(list_of_patient)):
-        for file in glob.glob('E:\Total_Train_dataset/*'):
+        for file in glob.glob('Total_Train_dataset/*'):
             if str(str(list_of_patient[i][0]).split("_")[-1]) in str(file):
                 key_word = str(str(list_of_patient[i][0]).split("_")[-1])
                 target_element = str(list_of_patient[i][1])
                 try:
-                    temp_path_RCC = 'E:\Total_Train_dataset/' + "_" + key_word + "_" + "RIGHT" + "_" + "CC" + ".png"
-                    temp_path_RMLO = 'E:\Total_Train_dataset/' + "_" + key_word + "_" + "RIGHT" + "_" + "MLO" + ".png"
+                    temp_path_RCC = 'Total_Train_dataset/' + "_" + key_word + "_" + "RIGHT" + "_" + "CC" + ".png"
+                    temp_path_RMLO = 'Total_Train_dataset/' + "_" + key_word + "_" + "RIGHT" + "_" + "MLO" + ".png"
                 except Exception as error:
                     print(error)
                 train_x1_rcc = 0
@@ -50,8 +50,8 @@ def input_data():
                     print(e)
                 if train_x1_cc is None:
                     try:
-                        temp_path_LCC = 'E:\Total_Train_dataset/' + "_" + key_word + "_" + "LEFT" + "_" + "CC" + ".png"
-                        temp_path_LMLO = 'E:\Total_Train_dataset/' + "_" + key_word + "_" + "LEFT" + "_" + "MLO" + ".png"
+                        temp_path_LCC = 'Total_Train_dataset/' + "_" + key_word + "_" + "LEFT" + "_" + "CC" + ".png"
+                        temp_path_LMLO = 'Total_Train_dataset/' + "_" + key_word + "_" + "LEFT" + "_" + "MLO" + ".png"
                     except Exception as error:
                         print(error)
                     try:
@@ -97,7 +97,7 @@ def input_data():
     return array_images, array_target
 list_patient_test_data = []
 def test_data():
-    file_name = "E:\model_b/Test_model_b.xlsx"
+    file_name = "model_b/Test_model_b.xlsx"
     list_of_patient = []
     df = pd.read_excel(io=file_name)
     patient_id = df['patient_id'].tolist()
@@ -110,12 +110,12 @@ def test_data():
     test_array_images = []
     test_array_target = []
     for i in range(len(list_of_patient)):
-        for file in glob.glob('E:/Total_Test_dataset/*'):
+        for file in glob.glob('Total_Test_dataset/*'):
             if str(str(list_of_patient[i][0]).split("_")[-1]) in str(file):
                 key_word = str(str(list_of_patient[i][0]).split("_")[-1])
                 target_element = str(list_of_patient[i][1])
-                temp_path_RCC = 'E:\Total_Test_dataset/' + "_" + key_word + "_" + "RIGHT" + "_" + "CC" + ".png"
-                temp_path_RMLO = 'E:\Total_Test_dataset/' + "_" + key_word + "_" + "RIGHT" + "_" + "MLO" + ".png"
+                temp_path_RCC = 'Total_Test_dataset/' + "_" + key_word + "_" + "RIGHT" + "_" + "CC" + ".png"
+                temp_path_RMLO = 'Total_Test_dataset/' + "_" + key_word + "_" + "RIGHT" + "_" + "MLO" + ".png"
                 #print(temp_path_CC, temp_path_MLO, target_element)
                 # image = cv2.imread(temp_path_MLO,0)
                 list_patient_test_data.append(str(list_of_patient[i][0]).split("_")[-1])
@@ -127,8 +127,8 @@ def test_data():
 
                 if train_x1_cc is None:
                     try:
-                        temp_path_LCC = 'E:\Total_Test_dataset/' + "_" + key_word + "_" + "LEFT" + "_" + "CC" + ".png"
-                        temp_path_LMLO = 'E:\Total_Test_dataset/' + "_" + key_word + "_" + "LEFT" + "_" + "MLO" + ".png"
+                        temp_path_LCC = 'Total_Test_dataset/' + "_" + key_word + "_" + "LEFT" + "_" + "CC" + ".png"
+                        temp_path_LMLO = 'Total_Test_dataset/' + "_" + key_word + "_" + "LEFT" + "_" + "MLO" + ".png"
                         train_x1_cc = cv2.imread(temp_path_LCC, 0)
                         train_x1_mlo = cv2.imread(temp_path_LMLO, 0)
                         train_x1_cc = cv2.flip(train_x1_cc, 1)
@@ -143,20 +143,22 @@ def test_data():
                     train_x1_cc = np.array(train_x1_cc).reshape(1, 2000, 2600, 1)
                     train_x1_mlo = cv2.resize(train_x1_mlo, (2000, 2600))
                     train_x1_mlo = np.array(train_x1_mlo).reshape(1, 2000, 2600, 1)
+					if train_x1_cc is not None:
+						if train_x1_mlo is not None:
 
-                    test_array_images.append([train_x1_cc,train_x1_mlo])
+							test_array_images.append([train_x1_cc,train_x1_mlo])
 
-                    if target_element == 0:
-                        train_y = matrix([[1, 0, 0]])
+							if target_element == 0:
+								train_y = matrix([[1, 0, 0]])
 
-                    if target_element == 1:
-                        train_y = matrix([[0, 1, 0]])
-                    if target_element == 2:
-                        train_y = matrix([[0, 0, 1]])
-                    else:
-                        train_y = matrix([[0, 1, 0]])
+							if target_element == 1:
+								train_y = matrix([[0, 1, 0]])
+							if target_element == 2:
+								train_y = matrix([[0, 0, 1]])
+							else:
+								train_y = matrix([[0, 1, 0]])
 
-                    test_array_target.append(train_y)
+							test_array_target.append(train_y)
                 except Exception as error:
                     print(error)
     print("List of test patients ", str(list_of_patient[i][0]).split("_")[-1])
@@ -167,7 +169,7 @@ def test_data():
 training_iters = 10
 learning_rate = 0.001
 batch_size = 1
-no_epochs = 100
+no_epochs = 10
 n_classes = 3
 
 x1_cc = tf.placeholder(tf.float32, shape=[1, 2000, 2600, 1])
@@ -198,7 +200,7 @@ with tf.Session() as sess:
     valid_accuracy = []
     train_accuracy = []
     test_accuracy = []
-    summary_writer = tf.summary.FileWriter("E:/training_graph/output", sess.graph)
+    summary_writer = tf.summary.FileWriter("model_b/output", sess.graph)
     array_images, array_target = input_data()
     array_images_test, array_target_test = test_data()
     # array_images = []
@@ -247,19 +249,20 @@ with tf.Session() as sess:
         overall_valid_loss = np.mean(valid_loss)
         overall_train_loss = np.mean(train_loss)
         print("Epoch ", epoch, " Training Accuracy: ", overall_train_accuracy, " Training Loss: ", overall_train_loss, " Validation Accuracy: ", overall_valid_accuracy, " Validation Loss: ", overall_valid_loss)
-        """for l in range((len(array_images_test) // 2), len(array_images_test), 1):
+        for l in range((len(array_images_test) // 2), len(array_images_test), 1):
         #for l in range(2):
             test_X = array_images_test[l]
+			x1, x2 = test_X
             test_y = array_target[l]
-            feed_dict_model = {x1_cc: test_X[0], x1_mlo: test_X[1], y: train_y}
+            feed_dict_model = {x1_cc: x1, x1_mlo: x2, y: train_y}
             test_acc_temp, test_loss_temp = sess.run([accuracy, cost], feed_dict=feed_dict_model)
 
             test_loss.append(test_loss_temp)
             test_accuracy.append(test_acc_temp)
         overall_test_accuracy = np.mean(test_accuracy)
         overall_test_loss = np.mean(test_loss)
-        print(" Test Accuracy: ", overall_test_accuracy, " Test Loss: ", overall_test_loss)"""
+        print(" Test Accuracy: ", overall_test_accuracy, " Test Loss: ", overall_test_loss)
 
     summary_writer.close()
 
-    savePath = saver.save(sess, 'E:/training_graph/agp_birads_model_b.ckpt')
+    savePath = saver.save(sess, 'model_b/agp_birads_model_b.ckpt')
