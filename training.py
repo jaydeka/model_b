@@ -1,6 +1,6 @@
 import tensorflow as tf
 #import model_b as model
-import model_b.model as model
+import model as model
 #import birads_test.model_b.utils as utils
 import cv2
 import numpy as np

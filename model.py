@@ -1,5 +1,5 @@
 
-import model_b.layers as layers
+import layers as layers
 
 
 def baseline(x, parameters, nodropout_probability=None, gaussian_noise_std=None):
