@@ -11,6 +11,7 @@ import pandas as pd
 import cv2
 import sys
 
+print("Loading train dataset...")
 
 def input_data():
     file_name = "model_b/Train_model_b.xlsx "
@@ -202,6 +203,7 @@ with tf.Session() as sess:
     test_accuracy = []
     summary_writer = tf.summary.FileWriter("model_b/output", sess.graph)
     array_images, array_target = input_data()
+	print("Loading test dataset...")
     array_images_test, array_target_test = test_data()
     # array_images = []
     # temp1_images = cv2.imread("E:\Total_Train_dataset/_00004_LEFT_CC.png",0)
@@ -217,6 +219,7 @@ with tf.Session() as sess:
     print("Validation Set : ", len(array_images_test) // 2)
     print("Test Set : ", len(array_images_test) // 2)
     iterator = 0
+	print("Started Training...")
     for epoch in range(no_epochs):
         for j in range(len(array_images) - 2):
         #for j in range(2):
@@ -226,6 +229,7 @@ with tf.Session() as sess:
 
             #print(train_x1_rcc)
             #opt = sess.run(optimizer, feed_dict={x1_cc: train_x1_rcc, y: train_y})
+			
             feed_dict_model = {x:train_x1_rcc, y: train_y}
             sess.run(train, feed_dict=feed_dict_model)
             loss, acc = sess.run([cost, accuracy],
