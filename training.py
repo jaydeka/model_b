@@ -169,8 +169,8 @@ def test_data():
 #Parameters
 training_iters = 10
 learning_rate = 0.001
-batch_size = 1
-no_epochs = 10
+batch_size = 8
+no_epochs = 200
 n_classes = 3
 
 x1_cc = tf.placeholder(tf.float32, shape=[1, 2000, 2600, 1])
