@@ -14,7 +14,7 @@ import sys
 print("Loading train dataset...")
 
 def input_data():
-    file_name = "model_b/Train_model_b.xlsx "
+    file_name = "model_b/Train_model_b.xlsx"
     list_of_patient = []
     df = pd.read_excel(io=file_name)
     patient_id = df['patient_id'].tolist()
