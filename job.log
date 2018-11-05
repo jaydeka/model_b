@@ -1,0 +1,625 @@
+WARNING:tensorflow:From model_b/training.py:183: softmax_cross_entropy_with_logits (from tensorflow.python.ops.nn_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+
+Future major versions of TensorFlow will allow gradients to flow
+into the labels input on backprop by default.
+
+See `tf.nn.softmax_cross_entropy_with_logits_v2`.
+
+2018-11-05 09:55:40.874973: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2018-11-05 09:55:41.534909: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:964] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2018-11-05 09:55:41.535274: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1411] Found device 0 with properties: 
+name: Tesla M60 major: 5 minor: 2 memoryClockRate(GHz): 1.1775
+pciBusID: 0000:00:1e.0
+totalMemory: 7.44GiB freeMemory: 7.36GiB
+2018-11-05 09:55:41.535312: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1490] Adding visible gpu devices: 0
+2018-11-05 09:55:41.878627: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-11-05 09:55:41.878679: I tensorflow/core/common_runtime/gpu/gpu_device.cc:977]      0 
+2018-11-05 09:55:41.878688: I tensorflow/core/common_runtime/gpu/gpu_device.cc:990] 0:   N 
+2018-11-05 09:55:41.878896: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1103] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 7095 MB memory) -> physical GPU (device: 0, name: Tesla M60, pci bus id: 0000:00:1e.0, compute capability: 5.2)
+Loading train dataset...
+Tensor("fully_connected_1/Softmax:0", shape=(1, 3), dtype=float32)
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+/usr/local/lib/python2.7/dist-packages/numpy/core/fromnumeric.py:2920: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+/usr/local/lib/python2.7/dist-packages/numpy/core/_methods.py:85: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+OpenCV(3.4.3) /io/opencv/modules/imgproc/src/resize.cpp:4044: error: (-215:Assertion failed) !ssize.empty() in function 'resize'
+
+Loading test dataset...
+('List of test patients ', '02501')
+Size of Dataset: 
+('Training Set : ', 386)
+('Validation Set : ', 0)
+('Test Set : ', 0)
+Started Training...
+('Epoch ', 0, ' Training Accuracy: ', 0.9817708, ' Training Loss: ', 0.593045, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 1, ' Training Accuracy: ', 0.99088544, ' Training Loss: ', 0.57224756, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 2, ' Training Accuracy: ', 0.9939236, ' Training Loss: ', 0.5653147, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 3, ' Training Accuracy: ', 0.9954427, ' Training Loss: ', 0.56184834, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 4, ' Training Accuracy: ', 0.99635416, ' Training Loss: ', 0.55976844, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 5, ' Training Accuracy: ', 0.99696183, ' Training Loss: ', 0.5583818, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 6, ' Training Accuracy: ', 0.9973958, ' Training Loss: ', 0.5573914, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 7, ' Training Accuracy: ', 0.9977214, ' Training Loss: ', 0.55664855, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 8, ' Training Accuracy: ', 0.9979745, ' Training Loss: ', 0.5560708, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 9, ' Training Accuracy: ', 0.9981771, ' Training Loss: ', 0.5556086, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 10, ' Training Accuracy: ', 0.9983428, ' Training Loss: ', 0.5552303, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 11, ' Training Accuracy: ', 0.9984809, ' Training Loss: ', 0.5549152, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 12, ' Training Accuracy: ', 0.99859774, ' Training Loss: ', 0.5546486, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 13, ' Training Accuracy: ', 0.99869794, ' Training Loss: ', 0.55441993, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 14, ' Training Accuracy: ', 0.9987847, ' Training Loss: ', 0.55422187, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 15, ' Training Accuracy: ', 0.99886066, ' Training Loss: ', 0.5540485, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 16, ' Training Accuracy: ', 0.9989277, ' Training Loss: ', 0.5538955, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 17, ' Training Accuracy: ', 0.99898726, ' Training Loss: ', 0.5537595, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 18, ' Training Accuracy: ', 0.99904054, ' Training Loss: ', 0.55363786, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 19, ' Training Accuracy: ', 0.9990885, ' Training Loss: ', 0.55352837, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 20, ' Training Accuracy: ', 0.9991319, ' Training Loss: ', 0.5534293, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 21, ' Training Accuracy: ', 0.9991714, ' Training Loss: ', 0.55333924, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 22, ' Training Accuracy: ', 0.99920744, ' Training Loss: ', 0.553257, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 23, ' Training Accuracy: ', 0.99924046, ' Training Loss: ', 0.5531816, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 24, ' Training Accuracy: ', 0.99927086, ' Training Loss: ', 0.55311227, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 25, ' Training Accuracy: ', 0.9992989, ' Training Loss: ', 0.55304825, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 26, ' Training Accuracy: ', 0.99932486, ' Training Loss: ', 0.55298895, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 27, ' Training Accuracy: ', 0.99934894, ' Training Loss: ', 0.55293393, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 28, ' Training Accuracy: ', 0.9993714, ' Training Loss: ', 0.5528827, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 29, ' Training Accuracy: ', 0.9993924, ' Training Loss: ', 0.5528348, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 30, ' Training Accuracy: ', 0.99941194, ' Training Loss: ', 0.5527901, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 31, ' Training Accuracy: ', 0.99943036, ' Training Loss: ', 0.55274814, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 32, ' Training Accuracy: ', 0.9994476, ' Training Loss: ', 0.5527087, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 33, ' Training Accuracy: ', 0.99946386, ' Training Loss: ', 0.5526716, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 34, ' Training Accuracy: ', 0.9994792, ' Training Loss: ', 0.5526366, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 35, ' Training Accuracy: ', 0.99949366, ' Training Loss: ', 0.5526036, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 36, ' Training Accuracy: ', 0.9995073, ' Training Loss: ', 0.5525723, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 37, ' Training Accuracy: ', 0.9995203, ' Training Loss: ', 0.5525427, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 38, ' Training Accuracy: ', 0.9995326, ' Training Loss: ', 0.5525146, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 39, ' Training Accuracy: ', 0.99954426, ' Training Loss: ', 0.55248797, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 40, ' Training Accuracy: ', 0.9995554, ' Training Loss: ', 0.5524626, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 41, ' Training Accuracy: ', 0.99956596, ' Training Loss: ', 0.5524384, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 42, ' Training Accuracy: ', 0.9995761, ' Training Loss: ', 0.5524154, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 43, ' Training Accuracy: ', 0.9995857, ' Training Loss: ', 0.5523934, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 44, ' Training Accuracy: ', 0.9995949, ' Training Loss: ', 0.55237234, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 45, ' Training Accuracy: ', 0.9996037, ' Training Loss: ', 0.55235225, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 46, ' Training Accuracy: ', 0.99961215, ' Training Loss: ', 0.55233294, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 47, ' Training Accuracy: ', 0.9996202, ' Training Loss: ', 0.5523145, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 48, ' Training Accuracy: ', 0.99962795, ' Training Loss: ', 0.5522968, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 49, ' Training Accuracy: ', 0.9996354, ' Training Loss: ', 0.55227983, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 50, ' Training Accuracy: ', 0.99964255, ' Training Loss: ', 0.55226344, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 51, ' Training Accuracy: ', 0.99964947, ' Training Loss: ', 0.55224776, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 52, ' Training Accuracy: ', 0.9996561, ' Training Loss: ', 0.5522327, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 53, ' Training Accuracy: ', 0.9996624, ' Training Loss: ', 0.55221814, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 54, ' Training Accuracy: ', 0.99966854, ' Training Loss: ', 0.55220413, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 55, ' Training Accuracy: ', 0.9996745, ' Training Loss: ', 0.5521906, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 56, ' Training Accuracy: ', 0.99968016, ' Training Loss: ', 0.5521775, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 57, ' Training Accuracy: ', 0.9996857, ' Training Loss: ', 0.5521649, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 58, ' Training Accuracy: ', 0.999691, ' Training Loss: ', 0.55215275, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 59, ' Training Accuracy: ', 0.9996962, ' Training Loss: ', 0.55214095, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 60, ' Training Accuracy: ', 0.99970114, ' Training Loss: ', 0.5521296, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 61, ' Training Accuracy: ', 0.999706, ' Training Loss: ', 0.5521186, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 62, ' Training Accuracy: ', 0.9997106, ' Training Loss: ', 0.55210793, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 63, ' Training Accuracy: ', 0.99971515, ' Training Loss: ', 0.5520976, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 64, ' Training Accuracy: ', 0.99971956, ' Training Loss: ', 0.5520876, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 65, ' Training Accuracy: ', 0.9997238, ' Training Loss: ', 0.5520779, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 66, ' Training Accuracy: ', 0.9997279, ' Training Loss: ', 0.5520685, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 67, ' Training Accuracy: ', 0.9997319, ' Training Loss: ', 0.55205935, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 68, ' Training Accuracy: ', 0.99973583, ' Training Loss: ', 0.5520504, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 69, ' Training Accuracy: ', 0.9997396, ' Training Loss: ', 0.5520418, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 70, ' Training Accuracy: ', 0.9997432, ' Training Loss: ', 0.5520334, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 71, ' Training Accuracy: ', 0.9997468, ' Training Loss: ', 0.55202526, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 72, ' Training Accuracy: ', 0.99975026, ' Training Loss: ', 0.55201733, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 73, ' Training Accuracy: ', 0.99975365, ' Training Loss: ', 0.55200964, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 74, ' Training Accuracy: ', 0.99975693, ' Training Loss: ', 0.55200213, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 75, ' Training Accuracy: ', 0.99976015, ' Training Loss: ', 0.5519948, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 76, ' Training Accuracy: ', 0.99976325, ' Training Loss: ', 0.5519877, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 77, ' Training Accuracy: ', 0.9997663, ' Training Loss: ', 0.55198073, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 78, ' Training Accuracy: ', 0.9997693, ' Training Loss: ', 0.551974, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 79, ' Training Accuracy: ', 0.99977213, ' Training Loss: ', 0.5519674, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 80, ' Training Accuracy: ', 0.99977493, ' Training Loss: ', 0.55196095, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 81, ' Training Accuracy: ', 0.9997777, ' Training Loss: ', 0.5519547, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 82, ' Training Accuracy: ', 0.99978036, ' Training Loss: ', 0.5519486, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 83, ' Training Accuracy: ', 0.999783, ' Training Loss: ', 0.5519426, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 84, ' Training Accuracy: ', 0.99978554, ' Training Loss: ', 0.55193675, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 85, ' Training Accuracy: ', 0.99978805, ' Training Loss: ', 0.551931, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 86, ' Training Accuracy: ', 0.9997905, ' Training Loss: ', 0.5519255, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 87, ' Training Accuracy: ', 0.9997929, ' Training Loss: ', 0.55192006, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 88, ' Training Accuracy: ', 0.9997952, ' Training Loss: ', 0.5519147, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 89, ' Training Accuracy: ', 0.99979746, ' Training Loss: ', 0.5519095, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 90, ' Training Accuracy: ', 0.99979967, ' Training Loss: ', 0.55190444, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 91, ' Training Accuracy: ', 0.9998019, ' Training Loss: ', 0.55189943, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 92, ' Training Accuracy: ', 0.99980396, ' Training Loss: ', 0.55189455, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 93, ' Training Accuracy: ', 0.99980605, ' Training Loss: ', 0.5518898, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 94, ' Training Accuracy: ', 0.99980813, ' Training Loss: ', 0.5518851, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 95, ' Training Accuracy: ', 0.9998101, ' Training Loss: ', 0.5518806, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 96, ' Training Accuracy: ', 0.99981207, ' Training Loss: ', 0.5518761, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 97, ' Training Accuracy: ', 0.999814, ' Training Loss: ', 0.55187166, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 98, ' Training Accuracy: ', 0.9998159, ' Training Loss: ', 0.5518674, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 99, ' Training Accuracy: ', 0.9998177, ' Training Loss: ', 0.5518632, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 100, ' Training Accuracy: ', 0.9998195, ' Training Loss: ', 0.5518591, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 101, ' Training Accuracy: ', 0.9998213, ' Training Loss: ', 0.551855, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 102, ' Training Accuracy: ', 0.99982303, ' Training Loss: ', 0.55185103, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 103, ' Training Accuracy: ', 0.9998247, ' Training Loss: ', 0.55184716, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 104, ' Training Accuracy: ', 0.9998264, ' Training Loss: ', 0.55184335, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 105, ' Training Accuracy: ', 0.99982804, ' Training Loss: ', 0.5518396, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 106, ' Training Accuracy: ', 0.99982965, ' Training Loss: ', 0.55183595, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 107, ' Training Accuracy: ', 0.9998312, ' Training Loss: ', 0.5518323, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 108, ' Training Accuracy: ', 0.99983275, ' Training Loss: ', 0.5518288, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 109, ' Training Accuracy: ', 0.9998343, ' Training Loss: ', 0.55182534, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 110, ' Training Accuracy: ', 0.9998358, ' Training Loss: ', 0.5518219, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 111, 
