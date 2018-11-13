@@ -29,13 +29,13 @@ def input_data():
     array_images =[]
     array_target = []
     for i in range(len(list_of_patient)):
-        for file in glob.glob('Total_Train_dataset/*'):
+        for file in glob.glob('dataset/Total_Train_dataset/*'):
             if str(str(list_of_patient[i][0]).split("_")[-1]) in str(file):
                 key_word = str(str(list_of_patient[i][0]).split("_")[-1])
                 target_element = str(list_of_patient[i][1])
                 try:
-                    temp_path_RCC = 'Total_Train_dataset/' + "_" + key_word + "_" + "RIGHT" + "_" + "CC" + ".png"
-                    temp_path_RMLO = 'Total_Train_dataset/' + "_" + key_word + "_" + "RIGHT" + "_" + "MLO" + ".png"
+                    temp_path_RCC = 'dataset/Total_Train_dataset/' + "_" + key_word + "_" + "RIGHT" + "_" + "CC" + ".png"
+                    temp_path_RMLO = 'dataset/Total_Train_dataset/' + "_" + key_word + "_" + "RIGHT" + "_" + "MLO" + ".png"
                 except Exception as error:
                     print(error)
                 train_x1_rcc = 0
@@ -51,8 +51,8 @@ def input_data():
                     print(e)
                 if train_x1_cc is None:
                     try:
-                        temp_path_LCC = 'Total_Train_dataset/' + "_" + key_word + "_" + "LEFT" + "_" + "CC" + ".png"
-                        temp_path_LMLO = 'Total_Train_dataset/' + "_" + key_word + "_" + "LEFT" + "_" + "MLO" + ".png"
+                        temp_path_LCC = 'dataset/Total_Train_dataset/' + "_" + key_word + "_" + "LEFT" + "_" + "CC" + ".png"
+                        temp_path_LMLO = 'dataset/Total_Train_dataset/' + "_" + key_word + "_" + "LEFT" + "_" + "MLO" + ".png"
                     except Exception as error:
                         print(error)
                     try:
@@ -111,12 +111,12 @@ def test_data():
     test_array_images = []
     test_array_target = []
     for i in range(len(list_of_patient)):
-        for file in glob.glob('Total_Test_dataset/*'):
+        for file in glob.glob('dataset/Total_Test_dataset/*'):
             if str(str(list_of_patient[i][0]).split("_")[-1]) in str(file):
                 key_word = str(str(list_of_patient[i][0]).split("_")[-1])
                 target_element = str(list_of_patient[i][1])
-                temp_path_RCC = 'Total_Test_dataset/' + "_" + key_word + "_" + "RIGHT" + "_" + "CC" + ".png"
-                temp_path_RMLO = 'Total_Test_dataset/' + "_" + key_word + "_" + "RIGHT" + "_" + "MLO" + ".png"
+                temp_path_RCC = 'dataset/Total_Test_dataset/' + "_" + key_word + "_" + "RIGHT" + "_" + "CC" + ".png"
+                temp_path_RMLO = 'dataset/Total_Test_dataset/' + "_" + key_word + "_" + "RIGHT" + "_" + "MLO" + ".png"
                 #print(temp_path_CC, temp_path_MLO, target_element)
                 # image = cv2.imread(temp_path_MLO,0)
                 list_patient_test_data.append(str(list_of_patient[i][0]).split("_")[-1])
@@ -128,8 +128,8 @@ def test_data():
 
                 if train_x1_cc is None:
                     try:
-                        temp_path_LCC = 'Total_Test_dataset/' + "_" + key_word + "_" + "LEFT" + "_" + "CC" + ".png"
-                        temp_path_LMLO = 'Total_Test_dataset/' + "_" + key_word + "_" + "LEFT" + "_" + "MLO" + ".png"
+                        temp_path_LCC = 'dataset/Total_Test_dataset/' + "_" + key_word + "_" + "LEFT" + "_" + "CC" + ".png"
+                        temp_path_LMLO = 'dataset/Total_Test_dataset/' + "_" + key_word + "_" + "LEFT" + "_" + "MLO" + ".png"
                         train_x1_cc = cv2.imread(temp_path_LCC, 0)
                         train_x1_mlo = cv2.imread(temp_path_LMLO, 0)
                         train_x1_cc = cv2.flip(train_x1_cc, 1)
@@ -206,15 +206,6 @@ with tf.Session() as sess:
     array_images, array_target = input_data()
     print("Loading test dataset...")
     array_images_test, array_target_test = test_data()
-    # array_images = []
-    # temp1_images = cv2.imread("E:\Total_Train_dataset/_00004_LEFT_CC.png",0)
-    # temp2_images = cv2.imread("E:\Total_Train_dataset/_00004_LEFT_MLO.png",0)
-    # temp1_images = cv2.resize(temp1_images, (2000, 2600))
-    # temp1_images = np.array(temp1_images).reshape(1, 2000, 2600, 1)
-    # temp2_images = cv2.resize(temp2_images, (2000, 2600))
-    # temp2_images = np.array(temp2_images).reshape(1, 2000, 2600, 1)
-    # array_images.append([temp1_images,temp2_images])
-    # train_y = matrix([[0, 0, 1]])
     print("Size of Dataset: ")
     print("Training Set : ", len(array_images))
     print("Validation Set : ", len(array_images_test) // 2)
@@ -227,10 +218,6 @@ with tf.Session() as sess:
             train_x1_rcc = array_images[j]
             x1, x2 = train_x1_rcc
             train_y = array_target[j]
-
-            #print(train_x1_rcc)
-            #opt = sess.run(optimizer, feed_dict={x1_cc: train_x1_rcc, y: train_y})
-			
             feed_dict_model = {x:train_x1_rcc, y: train_y}
             sess.run(train, feed_dict=feed_dict_model)
             loss, acc = sess.run([cost, accuracy],
@@ -240,9 +227,9 @@ with tf.Session() as sess:
 
         for k in range((len(array_images_test) // 2) - 1):
         #for k in range(2):
-            test_X = array_images[k]
+            test_X = array_images_test[k]
             x1, x2 = test_X
-            test_y = array_target[k]
+            test_y = array_target_test[k]
             feed_dict_model = {x1_cc:x1, x1_mlo:x2, y: test_y}
             validation_acc, validation_loss = sess.run([accuracy, cost], feed_dict=feed_dict_model)
 
@@ -258,7 +245,7 @@ with tf.Session() as sess:
         #for l in range(2):
             test_X = array_images_test[l]
             x1, x2 = test_X
-            test_y = array_target[l]
+            test_y = array_target_test[l]
             feed_dict_model = {x1_cc: x1, x1_mlo: x2, y: train_y}
             test_acc_temp, test_loss_temp = sess.run([accuracy, cost], feed_dict=feed_dict_model)
 
