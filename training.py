@@ -146,22 +146,23 @@ def test_data():
                     train_x1_mlo = np.array(train_x1_mlo).reshape(1, 2000, 2600, 1)
                 except Exception as e:
                     print(e)
-                    if train_x1_cc is not None:
-                        if train_x1_mlo is not None:
+                if train_x1_cc is not None:
+                    if train_x1_mlo is not None:
 
-                            test_array_images.append([train_x1_cc, train_x1_mlo])
+                        test_array_images.append([train_x1_cc, train_x1_mlo])
 
-                            if target_element == 0:
-                                train_y = matrix([[1, 0, 0]])
+                        if target_element == 0:
+                            train_y = matrix([[1, 0, 0]])
 
-                            if target_element == 1:
-                                train_y = matrix([[0, 1, 0]])
-                            if target_element == 2:
-                                train_y = matrix([[0, 0, 1]])
-                            else:
-                                train_y = matrix([[0, 1, 0]])
+                        if target_element == 1:
+                            train_y = matrix([[0, 1, 0]])
+                        if target_element == 2:
+                            train_y = matrix([[0, 0, 1]])
+                        else:
+                            train_y = matrix([[0, 1, 0]])
 
-                            test_array_target.append(train_y)
+                        test_array_target.append(train_y)
+
     print("List of test patients ", str(list_of_patient[i][0]).split("_")[-1])
     return test_array_images, test_array_target
 
