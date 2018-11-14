@@ -1,0 +1,112 @@
+WARNING:tensorflow:From model_b/training.py:184: softmax_cross_entropy_with_logits (from tensorflow.python.ops.nn_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+
+Future major versions of TensorFlow will allow gradients to flow
+into the labels input on backprop by default.
+
+See `tf.nn.softmax_cross_entropy_with_logits_v2`.
+
+2018-11-14 06:34:13.183597: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2018-11-14 06:34:13.785744: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:964] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2018-11-14 06:34:13.786053: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1432] Found device 0 with properties: 
+name: Tesla M60 major: 5 minor: 2 memoryClockRate(GHz): 1.1775
+pciBusID: 0000:00:1e.0
+totalMemory: 7.44GiB freeMemory: 7.36GiB
+2018-11-14 06:34:13.786078: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1511] Adding visible gpu devices: 0
+2018-11-14 06:34:14.111709: I tensorflow/core/common_runtime/gpu/gpu_device.cc:982] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-11-14 06:34:14.111760: I tensorflow/core/common_runtime/gpu/gpu_device.cc:988]      0 
+2018-11-14 06:34:14.111769: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 0:   N 
+2018-11-14 06:34:14.111977: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 7095 MB memory) -> physical GPU (device: 0, name: Tesla M60, pci bus id: 0000:00:1e.0, compute capability: 5.2)
+/usr/local/lib/python2.7/dist-packages/numpy/core/fromnumeric.py:2920: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+/usr/local/lib/python2.7/dist-packages/numpy/core/_methods.py:85: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Loading train dataset...
+Tensor("fully_connected_1/Softmax:0", shape=(1, 3), dtype=float32)
+Loading test dataset...
+('List of test patients ', '02501')
+Size of Dataset: 
+('Training Set : ', 0)
+('Validation Set : ', 0)
+('Test Set : ', 0)
+Started Training...
+('Epoch ', 0, ' Training Accuracy: ', nan, ' Training Loss: ', nan, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 1, ' Training Accuracy: ', nan, ' Training Loss: ', nan, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 2, ' Training Accuracy: ', nan, ' Training Loss: ', nan, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 3, ' Training Accuracy: ', nan, ' Training Loss: ', nan, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 4, ' Training Accuracy: ', nan, ' Training Loss: ', nan, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 5, ' Training Accuracy: ', nan, ' Training Loss: ', nan, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 6, ' Training Accuracy: ', nan, ' Training Loss: ', nan, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 7, ' Training Accuracy: ', nan, ' Training Loss: ', nan, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 8, ' Training Accuracy: ', nan, ' Training Loss: ', nan, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 9, ' Training Accuracy: ', nan, ' Training Loss: ', nan, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 10, ' Training Accuracy: ', nan, ' Training Loss: ', nan, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 11, ' Training Accuracy: ', nan, ' Training Loss: ', nan, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 12, ' Training Accuracy: ', nan, ' Training Loss: ', nan, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 13, ' Training Accuracy: ', nan, ' Training Loss: ', nan, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 14, ' Training Accuracy: ', nan, ' Training Loss: ', nan, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 15, ' Training Accuracy: ', nan, ' Training Loss: ', nan, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 16, ' Training Accuracy: ', nan, ' Training Loss: ', nan, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 17, ' Training Accuracy: ', nan, ' Training Loss: ', nan, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 18, ' Training Accuracy: ', nan, ' Training Loss: ', nan, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 19, ' Training Accuracy: ', nan, ' Training Loss: ', nan, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 20, ' Training Accuracy: ', nan, ' Training Loss: ', nan, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 21, ' Training Accuracy: ', nan, ' Training Loss: ', nan, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 22, ' Training Accuracy: ', nan, ' Training Loss: ', nan, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 23, ' Training Accuracy: ', nan, ' Training Loss: ', nan, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 24, ' Training Accuracy: ', nan, ' Training Loss: ', nan, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 25, ' Training Accuracy: ', nan, ' Training Loss: ', nan, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 26, ' Training Accuracy: ', nan, ' Training Loss: ', nan, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 27, ' Training Accuracy: ', nan, ' Training Loss: ', nan, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 28, ' Training Accuracy: ', nan, ' Training Loss: ', nan, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 29, ' Training Accuracy: ', nan, ' Training Loss: ', nan, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 30, ' Training Accuracy: ', nan, ' Training Loss: ', nan, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 31, ' Training Accuracy: ', nan, ' Training Loss: ', nan, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 32, ' Training Accuracy: ', nan, ' Training Loss: ', nan, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 33, ' Training Accuracy: ', nan, ' Training Loss: ', nan, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 34, ' Training Accuracy: ', nan, ' Training Loss: ', nan, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 35, ' Training Accuracy: ', nan, ' Training Loss: ', nan, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 36, ' Training Accuracy: ', nan, ' Training Loss: ', nan, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 37, ' Training Accuracy: ', nan, ' Training Loss: ', nan, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 38, ' Training Accuracy: ', nan, ' Training Loss: ', nan, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
+('Epoch ', 39, ' Training Accuracy: ', nan, ' Training Loss: ', nan, ' Validation Accuracy: ', nan, ' Validation Loss: ', nan)
+(' Test Accuracy: ', nan, ' Test Loss: ', nan)
